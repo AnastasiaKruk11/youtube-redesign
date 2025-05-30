@@ -1,0 +1,13 @@
+.bottom-items {
+    padding: 0 16px;
+}
+
+.bottom-wrapper {
+    display: none;
+}
+
+@media screen and (max-width: 320px) {
+    .bottom-wrapper {
+        display: block;
+    }
+}

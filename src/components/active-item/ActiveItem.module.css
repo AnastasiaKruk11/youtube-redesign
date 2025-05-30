@@ -1,0 +1,197 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    margin-top: 30px;
+    max-width: 830px;
+    border-bottom: 1px solid #D8D8D880;
+}
+
+.container h1 {
+    font-size: 1.8rem;
+    font-weight: 700;
+    margin-top: 20px;
+    text-align: left;
+    margin-bottom: 4px;
+}
+
+.title-info button {
+    display: none;
+}
+
+@media screen and (max-width: 320px) {
+    .title-info {
+        display: flex;
+    }
+    
+    .title-info button {
+        display: block;
+        background: none;
+        border: none;
+        margin-right: 20px;
+    }
+
+    .container h1 {
+        font-size: 1rem;
+        padding: 10px;
+    }
+}
+
+.container iframe {
+    border-radius: 14px;
+    height: 400px;
+}
+
+@media screen and (max-width: 320px) {
+    .container iframe {
+        border-radius: 0;
+        width: 320px;
+        height: 180px;
+    }
+}
+
+.video-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+@media screen and (max-width: 320px) {
+    .video-info {
+        display: block;
+        padding: 0 16px;
+        text-align: left;
+    }
+
+    .video-info p {
+        font-size: .6rem;
+        color: #C2C2C2;
+        margin-bottom: 20px;
+    }
+}
+
+.video-info button {
+    border: none;
+    cursor: pointer;
+}
+
+.like-btn, .dislike-btn, .share-btn {
+    width: 100px;
+    min-height: 40px;
+    margin-right: 10px;
+    background: none;
+    background-color: #EBEBEB;
+    border-radius: 20px;
+    font-size: 1rem;
+    color: #192646;
+}
+
+.menu-dots {
+    background: none;
+    margin-left: 40px;
+}
+
+@media screen and (max-width: 320px) {
+    .like-btn, .dislike-btn, .share-btn {
+        width: 85px;
+        height: 40px;
+        font-size: .8rem;
+    }
+
+    .menu-dots {
+        display: none;
+    }
+}
+
+.main-video-footer {
+    display: flex;
+    justify-content: space-between;
+    max-width: 830px;
+}
+
+.channel-pic img {
+    width: 80px;
+    margin: 15px;
+}
+
+@media screen and (max-width: 320px) {
+    .main-video-footer {
+        padding: 15px;
+        border-bottom: 1px solid #D8D8D880;
+    }
+    
+    .channel-pic img {
+        width: 50px;
+    }
+}
+
+.description {
+    text-align: left;
+}
+
+.description h4 {
+    font-size: 1.3rem;
+    margin-top: 38px;
+    color: #19202C;
+}
+
+.publish-date {
+    font-size: .65rem;
+    margin-top: 4px;
+    margin-bottom: 14px;
+    color: #C2C2C2;
+}
+
+@media screen and (max-width: 320px) {
+    .description h4 {
+        font-size: 1rem;
+        margin: 5px 10px 0;
+    }
+
+    .publish-date {
+        font-size: .6rem;
+        margin: 4px 10px 0;
+    }
+
+    .description-text {
+        display: none;
+    }
+}
+
+.show-more-btn {
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: #C2C2C2;
+    margin-top: 15px;
+}
+
+.subscribe-btn button {
+    background: none;
+    border: none;
+    width: 154px;
+    height: 40px;
+    background-color: #FF0000;
+    border-radius: 20px;
+    color: #fff;
+    margin-top: 38px;
+    cursor: pointer;
+    transition: background-color .7s, color .7s, border-color .7s;
+}
+
+.subscribe-btn button:hover {
+    background-color: #d30707;
+}
+
+@media screen and (max-width: 320px) {
+    .show-more-btn {
+        display: none;
+    }
+
+    .subscribe-btn button {
+        background-color: transparent;
+        color: #FF0000;
+        font-size: .9rem;
+        margin-top: 5px;
+    }
+}

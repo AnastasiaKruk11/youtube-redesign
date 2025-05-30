@@ -1,0 +1,141 @@
+.wrapper-header {
+    display: flex;
+    justify-content: space-between;
+}
+
+@media screen and (max-width: 320px) {
+    .wrapper-header {
+        padding: 12px 15px 0px 16px;
+    }
+}
+
+.wrapper-left {
+    display: flex;
+    align-items: center;
+}
+
+.wrapper-right {
+    width: 260px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.menu {
+    width: 20px;
+    height: 17px;
+    background: none;
+    border: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    cursor: pointer;
+    margin-right: 28px;
+}
+
+@media screen and (max-width: 320px) {
+    .menu {
+        display: none;
+
+    }
+}
+
+.dash {
+    background-color: #1F2022;
+    width: 20px;
+    height: 3px;
+}
+
+.main {
+    background: none;
+    border: none;
+    display: flex;
+    font-weight: 700;
+    font-size: 1rem;
+    margin-right: 59px;
+    cursor: pointer;
+}
+
+.logo {
+    width: 36.64px;
+    height: 24.99px;
+    margin-right: 5px;
+}
+
+.logo-title {
+    width: 74.59px;
+    height: 22.69px;
+}
+
+.search-form {
+    background-color: #EBEBEB;
+    max-width: 830px;
+    height: 44px;
+    opacity: 30%;
+    border-radius: 22px;
+    display: flex;
+    padding: 12px 13px 12px 23px;
+}
+
+@media screen and (max-width: 320px) {
+    .search-form {
+        display: none;
+    }
+}
+
+.search-input {
+    background: none;
+    border: none;
+    width: calc(100% - 20px);
+    height: 19px;
+    outline: none;
+    font-size: 0.8rem;
+}
+
+.search-btn {
+    border: none;
+    cursor: pointer;
+}
+
+.icon-btns {
+    display: flex;
+    width: 175px;
+    justify-content: space-between;
+}
+
+@media screen and (max-width: 320px) {
+    .icon-btns {
+        display: none;
+    }
+}
+
+.icon-btns button {
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.icon-btns button:not(:last-child) {
+    margin-right: 10px;
+}
+
+.user-pic {
+    margin-left: 45px;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 320px) {
+    .user-pic {
+        display: none;
+    }
+}
+
+.mob-menu {
+    display: flex;
+}
+
+.mob-menu button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    margin: 0 15px;
+}

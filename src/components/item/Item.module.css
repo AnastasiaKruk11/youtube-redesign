@@ -1,0 +1,42 @@
+.video-info {
+    color: #C2C2C2;
+    display: flex;
+    justify-content: space-between;
+}
+
+.video-info p {
+    font-size: .9rem;
+}
+
+.video-content h3 {
+    font-size: 1.30rem;
+    font-weight: 700;
+    margin-top: 8px;
+    margin-bottom: 8px;
+}
+
+.video-content {
+    margin-top: 23px;
+    margin-bottom: 20px;
+}
+
+.video-content iframe {
+    border-radius: 12px;
+}
+
+@media screen and (max-width: 320px) {
+    .video-content h3 {
+        font-size: .8rem;
+        text-align: left;
+    }
+
+    .video-info p {
+        font-size: .65rem;
+    }
+
+    .video-content iframe {
+        width: 288px;
+        height: 150px;
+        border-radius: 14px;
+    }
+}

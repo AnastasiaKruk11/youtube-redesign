@@ -1,0 +1,25 @@
+.nav-wrapper {
+    padding: 11px 24px;
+    position: fixed;
+    justify-content: space-between;
+    bottom: 1px;
+    background-color: #fff;
+    width: 100%;
+    display: none;
+}
+
+@media screen and (max-width: 320px) {
+    .nav-wrapper {
+        display: flex;
+    }
+}
+
+.nav-item button {
+    background: none;
+    border: none;
+}
+
+.nav-item p {
+    font-size: .5rem;
+    color: #898989;
+}
