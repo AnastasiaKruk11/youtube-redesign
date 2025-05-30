@@ -7,7 +7,7 @@ export default function ActiveItem({item}) {
                 <iframe width="100%" height="100%" src={item.src} frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                 <div className={classes['title-info']}>
                     <h1>{item.title}</h1>
-                    <button><img src='../public/arrow.png'></img></button>
+                    <button><img src='youtube-page/public/arrow.png'></img></button>
                 </div>
                 <div className={classes['video-info']}>
                     <p>{item.views} views</p>
@@ -21,7 +21,7 @@ export default function ActiveItem({item}) {
             </div>
             <div className={classes['main-video-footer']}>
                 <div className={classes['channel-pic']}>
-                    <img src='../public/channel-pic.png'></img>
+                    <img src='youtube-page/public/channel-pic.png'></img>
                 </div>
                 <div className={classes['description']}>
                     <h4>{item.author}</h4>
