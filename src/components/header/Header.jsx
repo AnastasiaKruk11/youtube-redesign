@@ -1,4 +1,12 @@
-import classes from './Header.module.css'
+import classes from './Header.module.css';
+import button from '/images/button.png';
+import logo from '/images/logo.png';
+import search from '/images/search.png';
+import camera from '/images/camera.png';
+import dots from '/images/dots.png';
+import bell from '/images/bell.png';
+import user from '/images/user.png';
+import mInfo from '/images/v-dots-info.png';
 
 export default function Header() {
     return (
@@ -12,28 +20,28 @@ export default function Header() {
                     </button>
 
                     <button className={classes['main']}>
-                        <img className={classes['logo']} src='../public/button.png'></img>
-                        <img className={classes['logo-title']} src='../public/logo.png'></img>
+                        <img className={classes['logo']} src={button} alt='Main page button'/>
+                        <img className={classes['logo-title']} src={logo} alt='Main page button'/>
                     </button>
 
                     <form className={classes['search-form']}>
                         <input className={classes['search-input']} placeholder='Search'></input>
-                        <button className={classes['search-btn']}><img src='../public/search.png'></img></button>
+                        <button className={classes['search-btn']}><img src={search} alt='Search button'/></button>
                     </form>
                 </div>
 
                 <div className={classes['wrapper-right']}></div>
                     <div className={classes['icon-btns']}>
-                        <button><img src='../public/camera.png'></img></button>
-                        <button><img src='../public/dots.png'></img></button>
-                        <button><img src='../public/bell.png'></img></button>
+                        <button><img src={camera} alt='Video add-button'/></button>
+                        <button><img src={dots} alt='Info button'/></button>
+                        <button><img src={bell} alt='Notification button'/></button>
                     </div>
                     <div className={classes['user-pic']}>
-                        <img src='../public/user.png'></img>
+                        <img src={user} alt='User page button'/>
                     </div>
                     <div className={classes['mob-menu']}>
-                        <button><img src='../public/search.png'></img></button>
-                        <button><img src='../public/v-dots-info.png'></img></button>
+                        <button><img src={search} alt='Search button'/></button>
+                        <button><img src={mInfo} alt='Info button'/></button>
                     </div>
             </div>
         </>
