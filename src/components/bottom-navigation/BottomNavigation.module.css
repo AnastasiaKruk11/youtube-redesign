@@ -2,7 +2,7 @@
     padding: 11px 24px;
     position: fixed;
     justify-content: space-between;
-    bottom: 1px;
+    bottom: .1px;
     background-color: #fff;
     width: 100%;
     display: none;

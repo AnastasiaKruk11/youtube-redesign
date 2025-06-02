@@ -1,13 +1,18 @@
 aside {
-    width: 367px;
+    width: calc(100% / 4);
     float: right;
-    margin-top: 39px;
-    margin-left: 40px;
+    margin: 39px 10px 0 40px;
     text-align: left;
-    color: #19202C;
+    color: var(--primary-text-color);
 }
 
-@media screen and (max-width: 320px)  {
+@media screen and (max-width: 790px) {
+    aside {
+        max-width: 200px;
+    }
+}
+
+@media screen and (max-width: 700px)  {
     aside {
         display: none;
         width: 0px;
@@ -20,9 +25,20 @@ aside {
     align-items: flex-end;
 }
 
+.sidebar-top h1 {
+    margin-right: 10px;
+    font-size: 1.8rem;
+}
+
 .autoplay-box {
     display: flex;
     align-items: center;
+}
+
+@media screen and (max-width: 790px) {
+    .sidebar-top h1 {
+        font-size: 1rem;
+    }
 }
 
 .switch {
@@ -46,7 +62,7 @@ aside {
     right: 0;
     bottom: 0;
     border-radius: 34px;
-    background-color: #EBEBEB;
+    background-color: var(--primary-color);
     -webkit-transition: .4s;
     transition: .4s;
 }
@@ -79,11 +95,13 @@ input:checked + .slider:before {
     margin-right: 11px;
 }
 
-.sidebar-top h1 {
-    font-size: 1.8rem;
+@media screen and (max-width: 790px) {
+    .autoplay-box p {
+        font-size: .6rem;
+    }
 }
 
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 700px) {
     .sidebar-top h1 {
         font-size: 1rem;
     }

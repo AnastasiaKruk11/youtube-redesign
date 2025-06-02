@@ -15,7 +15,7 @@ export default function Sidebar({items}) {
                         </label>
                     </div>
                 </div>
-                <VideoItems items={items} />
+                <VideoItems items={items} />           
             </aside>
         </>
     )
