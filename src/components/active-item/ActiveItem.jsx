@@ -1,4 +1,5 @@
 import classes from './ActiveItem.module.css';
+import like from '/images/like.png';
 
 export default function ActiveItem({item}) {
     return (
@@ -12,7 +13,7 @@ export default function ActiveItem({item}) {
                 <div className={classes['video-info']}>
                     <p>{item.views} views</p>
                     <div>
-                        <button className={classes['like-btn']}>123 <img src='/images/like.png'></img></button>
+                        <button className={classes['like-btn']}>123 <img src={like}/></button>
                         <button className={classes['dislike-btn']}>15 <img src='../public/dislike.png'></img></button>
                         <button className={classes['share-btn']}><img src='../public/share.png'></img> Share</button>
                         <button className={classes['menu-dots']}><img src='../public/dots-info.png'></img></button>
